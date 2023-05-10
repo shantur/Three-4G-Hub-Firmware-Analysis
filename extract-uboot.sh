@@ -43,10 +43,13 @@ dumpimage -T firmware -o uboot/uBoot2-lzma uboot/uImage2
 echo
 
 echo Decompressing uBoot from uboot/uBoot2-lzma to uboot/uBoot2
+echo
 lzcat uboot/uBoot2-lzma > uboot/uBoot2
-
+echo
 
 echo Extracting strings from uboot/uBoot2 to uboot/uBoot2-strings.txt
-echo
 strings uboot/uBoot2 > uboot/uBoot2-strings.txt
 echo
+
+
+dd if=$src_image of=uboot/uboot-environment.bin bs=1 skip=2097152 count=16384
