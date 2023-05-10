@@ -51,5 +51,11 @@ echo Extracting strings from uboot/uBoot2 to uboot/uBoot2-strings.txt
 strings uboot/uBoot2 > uboot/uBoot2-strings.txt
 echo
 
-
+echo Extract uboot environment to uboot/uboot-environment.bin
 dd if=$src_image of=uboot/uboot-environment.bin bs=1 skip=2097152 count=16384
+echo
+
+echo Extract strigs from uboot/uboot-environment.bin to uboot/uboot-environment-strings.txt
+strings uboot/uboot-environment.bin > uboot/uboot-environment-strings.txt
+echo
+
