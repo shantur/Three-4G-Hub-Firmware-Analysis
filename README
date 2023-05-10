@@ -1,0 +1,12 @@
+# Three 4G+ Hub - Sercomm LTE2122GR Firmware analysis
+
+## Requirements
+The analysis was done on Kali Linux 2023.01
+
+The following dependencies were installed
+``
+sudo apt install u-boot-tools
+sudo pip install jefferson
+sudo pip install ubi_reader
+``
+
