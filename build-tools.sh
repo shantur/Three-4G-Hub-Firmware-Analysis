@@ -4,7 +4,7 @@ set -e
 
 echo Downloading cross-compiler-mips
 echo
-#wget -O playground/downloads/cross-compiler-mips.tar.bz2 https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mips.tar.bz2
+wget -O playground/downloads/cross-compiler-mips.tar.bz2 https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mips.tar.bz2
 
 echo Extracting cross-compilter-mips
 cd playground/downloads/
