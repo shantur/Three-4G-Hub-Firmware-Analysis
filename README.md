@@ -42,7 +42,7 @@ As of now, the main discoveries are:
 1. All the encryption is handled by `libsex_crypt.so`
 1. `cmld` seems to be configuration management daemon that reads `default.xml` and manages merging with settings updated by user.
 1. TR-069 is enabled and allows 3 to send automatic firmware updates and run commands.
-
+1. `sc_cli` is a command line utility to manage router. Run with `sc_cli -m "" -h "" -p ""`.
 
 ## Attacks
 
@@ -86,6 +86,7 @@ TBC
 
 1. Download the nand dump from ISPreview forum here https://www.ispreview.co.uk/talk/threads/three-4g-hub-sercomm-lte2122gr-modding-discussions.39724/post-305833
 1. Clone this repository
+1. Run `./install-deps.sh` to install dependencies
 1. Run `./setup-playground <Path to DumpFile>`. This will setup all in `playground` folder
 1. Run `./boot-image.sh image-1` to boot the first image.
 1. Check the notes printed on the shell and follow them
